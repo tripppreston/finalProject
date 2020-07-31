@@ -130,4 +130,20 @@ margin-bottom: 100px;
 background-color: lightblue;
 
 }
+
+@media only screen and (max-width: 768px){
+ #theTitle {
+    text-align:center;
+ }
+}
+
+#contact-form{
+  float: bottom;
+}
+
+#display-name{
+
+  color: darkgreen;
+}
+
   

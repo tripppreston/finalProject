@@ -27,7 +27,7 @@
 <body>
     
     <div class="container">
-        <h1> <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/14979-200.png" style="width:50px;height:45px;"> Mining Made Easy</h1>
+        <h1 id="theTitle"> <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/14979-200.png" style="width:50px;height:45px;"> Mining Made Easy</h1>
         <hr />
         <div class="navbar">
             <ul class="nav nav-tabs">
@@ -85,7 +85,7 @@
                     </tr>
                     <tbody id="harvestedRows"></tbody>
                 </table>
-                <button type="button" onclick="fillTable()">Try it</button>
+                
             </div>
         <div class="col-md-3">
             <form class="form-horizontal" role="form">
@@ -172,7 +172,7 @@
 <br>
 <br>
 <div class="container">
-    <div class= "col-md-5 first">
+    <div class= "col-md-4 first">
         <h1>What this game is about.</h1>
         <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -181,11 +181,7 @@
              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</article>
 
     </div>
-    <div class= "col-md-2">
-        
-
-    </div>
-    <div class= "col-md-5 second">
+    <div class= "col-md-4 second">
         <h1>Why mining is important</h1>
         <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -193,6 +189,36 @@
             in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</article>
     </div>
+    <div class= "col-md-4">
+        <h3>Please sign up for our daily news letter on all things mining!</h3>
+        <form class ="form-horizontal form" id="contact-form">
+            <div class="form-group">
+                <!--Asks for the user's name.-->
+                <label for="name" class="col-md-4 control-label">Name:</label>
+                <div class="col-md-8">
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <!-- This asks the the user's email address. -->
+                <label for="email" class="col-md-4 control-label">Email:</label>
+                <div class="col-md-8">
+                    <input id="email" name="email" type="text" class="form-control"
+                        placeholder="www.email@example.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-8">
+                    <button onclick="buttonFunction(email)" id="user-button" type="button" name="userButton" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </form>
+
+        <p id="display-name"></p>
+
+    </div>
+    
   
    
 </div>
